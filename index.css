@@ -1,0 +1,347 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/*fundo da página*/
+body {
+  font-family: 'Inter', open sans;
+  background-color: #FDFAF6;
+  color: #000000; /*aqui é cor da letra*/
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/*cor da faixa superior de navegação*/
+header {
+  background-color: #898121;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+/*letras da faixa superior de navegação*/
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/*título da página que aparece no corpo da página web*/
+main {
+  flex: 1;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding:  -20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h1, h2 {
+  color: #0f172a;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+p, li {
+  font-size: 1.1rem;
+}
+
+
+.cta-button, .login-btn {
+  display: inline-block;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 12px 24px;
+  margin-top: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover, .login-btn:hover {
+  background-color: #1e293b;
+}
+
+
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.reports-table th, .reports-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.reports-table th {
+  background-color: #0f172a;
+  color: #fff;
+}
+
+
+.comunicados-section ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.comunicados-section li {
+  margin-bottom: 15px;
+}
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.login-form {
+  background-color: #ffffff;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+
+footer {
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
+}
+/* integrantes*/
+
+.foto1 img { float: left;
+ width: 15%;
+ border: thin solid;
+ padding: 5px;
+ margin: -10px 10px 10px 0;
+	
+	
+}.foto2 img { float: left;
+ width: 15%;
+ border: thin solid;
+ padding: 5px;
+ margin: 0px 10px 10px 0;
+	
+	
+}.foto3 img { float: left;
+ width: 15%;
+ border: thin solid;
+ padding: 5px;
+ margin: 25px 10px 10px 0;
+ margin-left: -152px;
+	
+	
+}.foto4 img { float: left;
+ width: 15%;
+ border: thin solid;
+ padding: 5px;
+ margin: 20px 10px 10px 0;
+	margin-left: -152px;
+	
+}
+/*integrantes, linha do tempo*/
+.conhecaquemcuida,.linhadotempo, {text-align: center;}
+
+.quemsomostxt, .linhadotempotxt, {text-align: justify;}
+
+
+
+/* linhadotempo*/
+
+
+.modal {
+    display: none; /* Começa oculto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 45px 55px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+	background-image:url('botao3.jpg')
+
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+/*framework*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+	padding-top:-75px;
+}
+
+.menu {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu a:hover {
+    background: #ddd;
+}
+
+#content {
+    flex-grow: 1;
+    padding: 20px;
+    background: #fff;
+}
+
+
+.frk-footer {
+  background-color: #0f172a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
+}
+
+.frk-footer a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.frk-footer a:hover {
+  text-decoration: underline;
+}
+
+.frk-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.frk-footer li {
+  margin: 5px 0;
+}
+
+/* Estilo para as imagens */
+#content img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  
+}
+
+/* Melhorando o layout das seções de exemplos */
+h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+#content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
