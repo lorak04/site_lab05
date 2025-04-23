@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha do Tempo dos Grandes Ataques Cibernéticos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background-image: url('fundo_linhadotempo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.2;
+            z-index: -1;
+            background-attachment: fixed;
+        }
+
+
+
+
+        .intro {
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+        }
+
+
+
+
+        .timeline {
+            margin: 50px auto;
+            padding: 0 20px;
+            max-width: 1200px;
+        }
+
+        .event {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 50px;
+            position: relative;
+
+        }
+
+        .event-content {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            background-color: rgba(0, 0, 0, 0.658);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .event img {
+            max-width: 250px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .event-details h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .event-details p {
+            font-size: 20px;
+            line-height: 1.5;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+
+        }
+
+        .event::before {
+            content: attr(data-date);
+            position: absolute;
+            top: 10px;
+            left: -60px;
+            background-color: #2b809b;
+            color: white;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .event {
+                flex-direction: column;
+            }
+
+            .event-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .event img {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo do Site">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="linha_do_tempo.html">Linha do Tempo</a></li>
+                <li><a href="banco_dados.html">Banco de Dados</a></li>
+                <li><a href="ferramenta_monitoramento.html">Ferramentas</a></li>
+                <li><a href="diretrizes_nist.html">NIST</a></li>
+                <li><a href="iso_27001.html">ISO 27001</a></li>
+                <li><a href="cobit.html">COBIT</a></li>
+                <li><a href="framework.html">Framework</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="intro">
+            <h1>Linha do Tempo dos Grandes Ataques Cibernéticos</h1>
+
+        </section>
+
+        <section class="timeline">
+
+            <div class="event" data-date="2000">
+                <div class="event-content">
+                    <img src="melissa_virus.png" alt="Melissa Virus">
+                    <div class="event-details">
+                        <h2>2000 - Melissa Virus</h2>
+                        <p>O Melissa foi um dos primeiros worms a se espalharem rapidamente pela internet. Inicialmente,
+                            ele foi disseminado por meio de anexos de e-mail e, uma vez ativado, o vírus enviava cópias
+                            de si mesmo para os 50 primeiros contatos na agenda do usuário. O impacto foi significativo,
+                            interrompendo serviços de empresas e desestabilizando sistemas. O Melissa foi responsável
+                            por causar danos financeiros de milhões de dólares e demonstrou a vulnerabilidade dos
+                            sistemas de e-mail da época.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event" data-date="2007">
+                <div class="event-content">
+                    <img src="ddos.jfif" alt="Ataque DDoS na Estônia">
+                    <div class="event-details">
+                        <h2>2007 - Ataque DDoS na Estônia</h2>
+                        <p>Em 2007, a Estônia sofreu um dos maiores e mais sofisticados ataques de negação de serviço
+                            (DDoS) da história. Durante semanas, sites governamentais, serviços bancários online e até o
+                            Parlamento foram sobrecarregados com tráfego falso. O ataque foi atribuído a grupos
+                            cibernéticos russos, em retaliação a uma disputa política relacionada a um monumento na
+                            Estônia. Esse ataque evidenciou a vulnerabilidade de países altamente dependentes de
+                            infraestruturas digitais e chamou a atenção internacional para a segurança cibernética.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event" data-date="2013">
+                <div class="event-content">
+                    <img src="target.jfif" alt="Ataque à Target">
+                    <div class="event-details">
+                        <h2>2013 - Ataque à Target</h2>
+                        <p>O ataque à rede da Target resultou no roubo de dados de mais de 40 milhões de cartões de
+                            crédito e débito, além de informações pessoais de cerca de 70 milhões de clientes. O
+                            incidente foi possível devido a uma falha na segurança do sistema de pagamento, onde os
+                            hackers conseguiram acesso a credenciais de fornecedores terceirizados. Este ataque destacou
+                            a necessidade de segurança em toda a cadeia de suprimentos e a importância de utilizar
+                            sistemas de pagamento mais seguros, como a tecnologia EMV.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event" data-date="2014">
+                <div class="event-content">
+                    <img src="sony_pictures.jfif" alt="Ataque ao Sony Pictures">
+                    <div class="event-details">
+                        <h2>2014 - Ataque ao Sony Pictures</h2>
+                        <p>Em 2014, hackers invadiram os sistemas do Sony Pictures, roubando uma enorme quantidade de
+                            dados sensíveis, incluindo e-mails privados, contratos e informações pessoais de
+                            funcionários. O ataque foi atribuído ao grupo Guardians of Peace e foi possivelmente
+                            motivado pela produção do filme "A Entrevista", que zombava do governo norte-coreano. O
+                            incidente não apenas causou danos financeiros significativos, mas também destacou os riscos
+                            de ataques motivados politicamente e a vulnerabilidade das empresas a ciberataques
+                            organizados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event" data-date="2015">
+                <div class="event-content">
+                    <img src="opm.jpg" alt="Ataque ao OPM dos EUA">
+                    <div class="event-details">
+                        <h2>2015 - Ataque ao OPM dos EUA</h2>
+                        <p>O ataque ao Office of Personnel Management (OPM) dos EUA é considerado um dos maiores roubos
+                            de dados pessoais da história. Hackers, possivelmente de origem chinesa, roubaram
+                            informações sensíveis de mais de 21 milhões de americanos, incluindo dados de segurança e
+                            antecedentes de funcionários do governo. A violação levantou sérias questões sobre a
+                            segurança de dados do governo e a proteção de informações pessoais críticas de cidadãos e
+                            servidores públicos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event" data-date="2016">
+                <div class="event-content">
+                    <img src="bangladesh.jfif" alt="Ataque ao Banco Central do Bangladesh">
+                    <div class="event-details">
+                        <h2>2016 - Ataque ao Banco Central do Bangladesh</h2>
+                        <p>Em 2016, hackers atacaram o Banco Central do Bangladesh e conseguiram transferir 81 milhões
+                            de dólares para contas no exterior usando o sistema SWIFT, uma rede de pagamentos
+                            internacionais. O ataque foi uma das maiores invasões financeiras da história e expôs
+                            vulnerabilidades no sistema de pagamentos bancários globais. O incidente trouxe à tona a
+                            necessidade de maior vigilância e segurança no setor bancário, além de uma atualização nos
+                            protocolos de segurança do SWIFT.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event" data-date="2017">
+                <div class="event-content">
+                    <img src="wannacry.png" alt="WannaCry Ransomware">
+                    <div class="event-details">
+                        <h2>2017 - WannaCry Ransomware</h2>
+                        <p>O WannaCry foi um dos mais devastadores ataques de ransomware, afetando mais de 200.000
+                            computadores em 150 países. Ele explorava uma vulnerabilidade no sistema Windows que havia
+                            sido divulgada pelo grupo de hackers Shadow Brokers. O ransomware criptografava arquivos e
+                            exigia resgates em Bitcoin para desbloqueá-los. O ataque teve um impacto significativo em
+                            hospitais e empresas ao redor do mundo, evidenciando a importância de manter os sistemas
+                            atualizados e as falhas de segurança rapidamente corrigidas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event" data-date="2018">
+                <div class="event-content">
+                    <img src="facebook.jfif" alt="Escândalo Cambridge Analytica">
+                    <div class="event-details">
+                        <h2>2018 - Escândalo Cambridge Analytica</h2>
+                        <p>O escândalo envolvendo a Cambridge Analytica revelou que os dados de até 87 milhões de
+                            usuários do Facebook foram coletados e usados sem consentimento para fins de manipulação
+                            política durante as eleições nos EUA em 2016. Esse incidente gerou um debate global sobre
+                            privacidade digital e o uso ético dos dados pessoais, forçando as empresas de tecnologia a
+                            reconsiderar suas políticas de coleta e armazenamento de dados.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event" data-date="2019">
+                <div class="event-content">
+                    <img src="ransoware.jfif" alt="Ataque ao City of Baltimore">
+                    <div class="event-details">
+                        <h2>2019 - Ataque ao City of Baltimore</h2>
+                        <p>Em 2019, a cidade de Baltimore foi alvo de um ataque de ransomware que paralisou diversos
+                            serviços municipais, incluindo a gestão de pagamentos de impostos e serviços de correios. O
+                            ataque exigiu um pagamento de resgate para desbloquear os sistemas, e o incidente resultou
+                            em prejuízos financeiros consideráveis. Esse ataque sublinhou a vulnerabilidade das
+                            administrações locais a ameaças cibernéticas e a necessidade de maior investimento em
+                            cibersegurança nas esferas governamentais.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event" data-date="2020">
+                <div class="event-content">
+                    <img src="solarwinds.jpg" alt="Ataque SolarWinds">
+                    <div class="event-details">
+                        <h2>2020 - Ataque SolarWinds</h2>
+                        <p>O ataque a SolarWinds foi um dos mais sofisticados e amplos da história. Hackers,
+                            supostamente ligados ao governo russo, comprometeram o software de monitoramento de redes da
+                            SolarWinds, utilizado por empresas e agências governamentais em todo o mundo. Por meio de
+                            uma atualização maliciosa, os atacantes conseguiram infiltrar-se em redes governamentais e
+                            privadas, incluindo o Departamento de Energia dos EUA e o Pentágono. O incidente demonstrou
+                            a vulnerabilidade das cadeias de suprimentos de TI e a necessidade de uma defesa cibernética
+                            mais rigorosa em todos os níveis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p>Email: securityplus@gmail.com</p>
+                <p>Telefone: (61) 4002-8922</p>
+                <p>Endereço: SEP Sul Trecho 713/913, SHCS, Brasília - DF, 70390-135</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links relacionados</h3>
+                <ul>
+                    <li><a href="https://www.sans.org/cyber-security-training/operations-centers" target="_blank">SANS -
+                            SOC Training</a></li>
+                    <li><a href="https://www.cyber.gov.au/acsc/view-all-content/publications/introducing-security-operations-centre-soc"
+                            target="_blank">Cyber Gov AU</a></li>
+                    <li><a href="https://www.cloudflare.com/learning/ddos/glossary/security-operations-center-soc/"
+                            target="_blank">Cloudflare - SOC</a></li>
+                    <li><a href="https://www.splunk.com/en_us/solutions/security-operations-center.html"
+                            target="_blank">Splunk - SOC</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/seuusuario" target="_blank"><i data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/seuperfil" target="_blank"><i data-lucide="linkedin"></i></a>
+                <a href="https://instagram.com/seuinsta" target="_blank"><i data-lucide="instagram"></i></a>
+            </div>
+
+        </div>
+        <div class="footer-missao">
+            <p>Promovendo a cibersegurança com tecnologia, conhecimento e inovação.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Segurança Cibernética. Todos os direitos reservados.</p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

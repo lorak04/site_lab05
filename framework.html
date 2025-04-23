@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretrizes NIST</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .container-nist {
+            display: flex;
+            gap: 40px;
+            padding: 40px;
+            flex-wrap: nowrap;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .menu-lateral {
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+            background: linear-gradient(90deg #3533cd);
+            border-radius: 8px;
+            padding: 20px;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+            align-self: flex-start;
+        }
+
+        .menu-lateral ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-lateral li {
+            margin: 12px 0;
+        }
+
+        .menu-lateral a {
+            color: #cfd8e3;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s, transform 0.2s;
+            display: block;
+            padding: 6px 8px;
+            border-radius: 6px;
+        }
+
+        .menu-lateral a:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #f39c12;
+            transform: translateX(5px);
+        }
+
+        .conteudo-nist {
+            flex: 3;
+            min-width: 320px;
+
+        }
+
+        .conteudo-nist section {
+            margin-bottom: 60px;
+            background: linear-gradient(90deg #3533cd);
+            padding: 30px;
+
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+        }
+
+        .conteudo-nist h2 {
+            font-size: 50px;
+            color: #00e0ff;
+            margin-bottom: 20px;
+            border-left: 5px solid #00e0ff;
+            padding-left: 15px;
+        }
+
+        .conteudo-nist p {
+            font-size: 17px;
+            text-align: justify;
+            line-height: 1.8;
+            color: #e0e0e0;
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .container-nist {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .menu-lateral {
+                position: relative;
+                top: auto;
+                max-width: 100%;
+                background: #1e2d5c;
+            }
+        }
+
+        section img {
+            display: block;
+            margin: 0px auto;
+            width: 100%;
+
+            height: 700px;
+
+        }
+
+        .extra-lista {
+            list-style: disc;
+            margin-left: 20px;
+            color: #e0e0e0;
+            font-size: 17px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ecf0f1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="linha_do_tempo.html">Linha do Tempo</a></li>
+                <li><a href="banco_dados.html">Banco de Dados</a></li>
+                <li><a href="ferramenta_monitoramento.html">Ferramentas</a></li>
+                <li><a href="diretrizes_nist.html">NIST</a></li>
+                <li><a href="iso_27001.html">ISO 27001</a></li>
+                <li><a href="cobit.html">COBIT</a></li>
+                <li><a href="framework.html">Framework</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    </section>
+    <section>
+        <img src="framework.png" alt="">
+    </section>
+
+    <div class="container-nist">
+        <aside class="menu-lateral">
+
+            <ul>
+                <li><a href="#objetivo"> Objetivo</a></li>
+                <li><a href="#referencia">Referenciais Utilizadas</a></li>
+                <li><a href="#estrutura">Estrutura do Framework (5 Domínios)</a></li>
+                <li><a href="#matriz">Matriz de Responsabilidades (RACI)</a></li>
+                <li><a href="#indicadores">Indicadores e Maturidade</a></li>
+                <li><a href="#implementacao"> Implantação e Sustentação</a></li>
+            </ul>
+        </aside>
+
+        <main class="conteudo-nist">
+            <section id="objetivo">
+
+                <h2>Objetivo</h2>
+                <p>Estabelecer diretrizes e práticas integradas de segurança da informação e governança de TI para
+                    garantir a proteção dos ativos, conformidade regulatória, continuidade dos serviços e melhoria
+                    contínua do ambiente operacional de segurança.</p>
+
+            </section>
+
+            <section id="referencia">
+                <h2>Referenciais Utilizadas</h2>
+                <ul class="extra-lista"></ul>
+                <li>COBIT 2019 – Governança e Gestão de TI.</li>
+                <li>ISO/IEC 27001 – Sistema de Gestão de Segurança da Informação (SGSI).</li>
+                <li>NIST Cybersecurity Framework (CSF) – Identificar, Proteger, Detectar, Responder e Recuperar.</li>
+                </ul>
+
+
+
+                <section id="estrutura">
+                    <h2>Estrutura do Framework (5 Domínios)</h2>
+                    <h3>1. Governança Estratégica da Segurança</h3>
+                    <p>Base: COBIT (Governança), ISO 27001 (Contexto da organização)</p>
+                    <h4>Objetivos:</h4>
+                    <ul class="extra-lista"></ul>
+                    <li>Garantir alinhamento entre objetivos de segurança e metas estratégicas.</li>
+                    <li>Estabelecer uma política de segurança robusta e aprovada pela alta direção.</li>
+                    <li>Criar comitês de segurança e fóruns para análise de riscos e tomada de decisão.</li>
+                    </ul>
+
+                    <h4>Práticas:</h4>
+                    <ul class="extra-lista"></ul>
+                    <li>Definir papéis e responsabilidades com clara separação de funções (SoD).</li>
+                    <li>Realizar avaliações periódicas de risco com base em ISO 27005.</li>
+                    <li>Incluir requisitos de segurança nos contratos com terceiros.</li>
+                    </ul>
+
+
+                    <h3>2. Gestão de Riscos e Conformidade</h3>
+                    <p>Base: ISO 27001 (Análise de risco e controles), COBIT (Gerenciamento de risco), NIST (ID)</p>
+                    <h4>Objetivos:</h4>
+                    <ul class="extra-lista"></ul>
+                    <li>Identificar, avaliar e tratar riscos cibernéticos de forma contínua.</li>
+                    <li>Garantir conformidade com leis como LGPD, GDPR, e normas específicas do setor.</li>
+                    </ul>
+
+                    <h4>Práticas:</h4>
+                    <ul class="extra-lista"></ul>
+                    <li>Manter inventário atualizado de ativos e dados críticos.</li>
+                    <li>Utilizar matriz de risco (probabilidade x impacto).</li>
+                    <li>Realizar auditorias internas periódicas de conformidade e gap analysis.</li>
+                    </ul>
+
+                    <h3>3. Proteção de Ativos e Dados</h3>
+                    <p>Base: NIST (PR), ISO 27001 (Controles Anexo A), COBIT (Gestão de Segurança)</p>
+                    <h4>Objetivos:</h4>
+                    <ul class="extra-lista"></ul>
+                    <li>Garantir a confidencialidade, integridade e disponibilidade dos dados.</li>
+                    <li>Proteger os ativos de rede, endpoints e sistemas internos.</li>
+                    </ul>
+
+                    <h4>Práticas:</h4>
+                    <ul class="extra-lista"></ul>
+                    <li>Controle de acesso baseado em função (RBAC).</li>
+                    <li>Criptografia de dados em repouso e em trânsito.</li>
+                    <li>Hardening de servidores e estações.</li>
+                    <li>Gestão de vulnerabilidades com atualizações contínuas e correções (patches).</li>
+                    </ul>
+
+
+                    <h3>4. Monitoramento, Detecção e Resposta a Incidentes</h3>
+                    <p>Base: NIST (DE, RS), ISO 27035, COBIT (Monitoramento e Resposta)</p>
+                    <h4>Objetivos:</h4>
+                    <ul class="extra-lista"></ul>
+                    <li>Detectar e responder rapidamente a eventos de segurança.</li>
+                    <li>Minimizar o impacto e manter a continuidade operacional.</li>
+                    </ul>
+
+                    <h4>Práticas:</h4>
+                    <ul class="extra-lista"></ul>
+                    <li>Operação 24x7 com ferramentas SIEM e SOAR.</li>
+                    <li>Playbooks de resposta a incidentes específicos (ex: ransomware, phishing).</li>
+                    <li>Indicadores de desempenho (KPIs) como tempo médio de resposta (MTTR).</li>
+                    <li>Retrospectivas pós-incidente e melhoria contínua do plano de resposta.</li>
+                    </ul>
+
+
+                    <h3>5. Recuperação, Continuidade e Melhoria Contínua</h3>
+                    <p>Base: NIST (RC), ISO 22301 + ISO 27001, COBIT (Continuidade de Serviços)</p>
+                    <h4>Objetivos:</h4>
+                    <ul class="extra-lista"></ul>
+                    <li>Garantir a rápida recuperação após incidentes.</li>
+                    <li>Aprimorar constantemente o sistema de segurança.</li>
+                    </ul>
+
+                    <h4>Práticas:</h4>
+                    <ul class="extra-lista"></ul>
+                    <li>Testes regulares de backup e planos de recuperação de desastres (DRP).</li>
+                    <li>Exercícios simulados de crise (tabletop).</li>
+                    <li>Indicadores de maturidade com base no CMMI.</li>
+                    <li>Ciclo PDCA (Plan-Do-Check-Act) aplicado a todos os domínios.</li>
+                    </ul>
+
+
+
+                </section>
+
+                <section id="matriz">
+                    <h2> Matriz de Responsabilidades (RACI)</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Função / Domínio</th>
+                                <th>CSO</th>
+                                <th>CISO</th>
+                                <th>Equipe SOC</th>
+                                <th>TI</th>
+                                <th>Jurídico</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Política de Segurança</td>
+                                <td>A</td>
+                                <td>R</td>
+                                <td>C</td>
+                                <td>I</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Gestão de Riscos</td>
+                                <td>A</td>
+                                <td>R</td>
+                                <td>C</td>
+                                <td>C</td>
+                                <td>R</td>
+                            </tr>
+                            <tr>
+                                <td>Resposta a Incidentes</td>
+                                <td>I</td>
+                                <td>R</td>
+                                <td>R</td>
+                                <td>C</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Continuidade e Recuperação</td>
+                                <td>R</td>
+                                <td>A</td>
+                                <td>C</td>
+                                <td>R</td>
+                                <td>I</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <ul class="extra-lista"></ul>
+                    <li>R = Responsável</li>
+                    <li>A = Aprovador final</li>
+                    <li>C = Consultado</li>
+                    <li>I = Informado</li>
+                    </ul>
+
+
+                </section>
+
+                <section id="indicadores">
+                    <h2>Indicadores e Maturidade</h2>
+                    <ul class="extra-lista"></ul>
+                    <li>Avaliação anual de maturidade (CMMI: 1 a 5)</li>
+                    <li>% de incidentes resolvidos no SLA</li>
+                    <li>% de ativos monitorados</li>
+                    <li>MTTD e MTTR</li>
+                    <li>% de conformidade ISO/IEC 27001</li>
+                    </ul>
+
+
+                </section>
+
+                <section id="implementacao">
+                    <h2>Implantação e Sustentação</h2>
+                    <ul class="extra-lista"></ul>
+                    <li>Diagnóstico e Roadmap</li>
+                    <li>Treinamento contínuo</li>
+                    <li>Automação com SIEM, GRC, ITSM</li>
+                    <li>Campanhas de cultura de segurança</li>
+                    <li>Revisão anual e lições aprendidas</li>
+                    </ul>
+                </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p>Email: securityplus@gmail.com</p>
+                <p>Telefone: (61) 4002-8922</p>
+                <p>Endereço: SEP Sul Trecho 713/913, SHCS, Brasília - DF, 70390-135</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links relacionados</h3>
+                <ul>
+                    <li><a href="https://www.nist.gov/cyberframework" target="_blank">Site Oficial do NIST</a></li>
+                    <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA -
+                            Vulnerabilidades</a></li>
+                    <li><a href="https://www.nist.gov/publications" target="_blank">Publicações NIST</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/seuusuario" target="_blank"><i data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/seuperfil" target="_blank"><i data-lucide="linkedin"></i></a>
+                <a href="https://instagram.com/seuinsta" target="_blank"><i data-lucide="instagram"></i></a>
+            </div>
+
+        </div>
+        <div class="footer-missao">
+            <p>Promovendo a cibersegurança com tecnologia, conhecimento e inovação.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Segurança Cibernética. Todos os direitos reservados.</p>
+        </div>
+
+
+    </footer>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretrizes NIST</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .container-nist {
+            display: flex;
+            gap: 40px;
+            padding: 40px;
+            flex-wrap: nowrap;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .menu-lateral {
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+            background: linear-gradient(90deg #3533cd);
+            border-radius: 8px;
+            padding: 20px;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+            align-self: flex-start;
+        }
+
+        .menu-lateral ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-lateral li {
+            margin: 12px 0;
+        }
+
+        .menu-lateral a {
+            color: #cfd8e3;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s, transform 0.2s;
+            display: block;
+            padding: 6px 8px;
+            border-radius: 6px;
+        }
+
+        .menu-lateral a:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #f39c12;
+            transform: translateX(5px);
+        }
+
+        .conteudo-nist {
+            flex: 3;
+            min-width: 320px;
+
+        }
+
+        .conteudo-nist section {
+            margin-bottom: 60px;
+            background: linear-gradient(90deg #3533cd);
+            padding: 30px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+        }
+
+        .conteudo-nist h2 {
+            font-size: 50px;
+            color: #00e0ff;
+            margin-bottom: 20px;
+            border-left: 5px solid #00e0ff;
+            padding-left: 15px;
+        }
+
+        .conteudo-nist p {
+            font-size: 17px;
+            text-align: justify;
+            line-height: 1.8;
+            color: #e0e0e0;
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .container-nist {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .menu-lateral {
+                position: relative;
+                top: auto;
+                max-width: 100%;
+                background: #1e2d5c;
+            }
+        }
+
+        section img {
+            display: block;
+            margin: 0px auto;
+            width: 100%;
+            height: 700px;
+
+        }
+
+        .extra-lista {
+            list-style: disc;
+            margin-left: 20px;
+            color: #e0e0e0;
+            font-size: 17px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="linha_do_tempo.html">Linha do Tempo</a></li>
+                <li><a href="banco_dados.html">Banco de Dados</a></li>
+                <li><a href="ferramenta_monitoramento.html">Ferramentas</a></li>
+                <li><a href="diretrizes_nist.html">NIST</a></li>
+                <li><a href="iso_27001.html">ISO 27001</a></li>
+                <li><a href="cobit.html">COBIT</a></li>
+                <li><a href="framework.html">Framework</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <img src="NIST-2.0-Feature.png" alt="">
+    </section>
+
+
+
+    <div class="container-nist">
+        <aside class="menu-lateral">
+
+            <ul>
+                <li><a href="#o_que_e">O que é o NIST Cybersecurity Framework</a></li>
+                <li><a href="#historia">História do NIST Cybersecurity Framework</a></li>
+                <li><a href="#estrutura">Estrutura central do NISTCybersecurity Framework</a></li>
+                <li><a href="#camadas">Camadas de implementação do NIST Framework</a></li>
+                <li><a href="#estabelecer">Estabelecendo um programa de gerenciamento de riscos de segurança cibernética
+                        do NIST Framework</a></li>
+            </ul>
+        </aside>
+
+        <main class="conteudo-nist">
+            <section id="o_que_e">
+                <h2>O que é o NIST Cybersecurity Framework</h2>
+                <p>O National Institute of Standards and Technology (NIST) é uma agência não reguladora que promove a
+                    inovação por meio do avanço da ciência, padrões e tecnologia de medição. O NIST Cybersecurity
+                    Framework (NIST CSF) consiste em padrões, diretrizes e práticas recomendadas que ajudam as
+                    organizações a melhorar seu gerenciamento de riscos de segurança cibernética. </p>
+                <p>O NIST CSF foi projetado para ser flexível o suficiente para se integrar aos processos de segurança
+                    existentes em qualquer organização, em qualquer setor. Ele fornece um excelente ponto de partida
+                    para implementar segurança da informações e gerenciamento de riscos de segurança cibernética em
+                    praticamente qualquer organização do setor privado nos Estados Unidos.</p>
+            </section>
+
+            <section id="historia">
+                <h2>História do NIST Cybersecurity Framework</h2>
+                <p>Em 12 de fevereiro de 2013, foi emitida a Ordem Executiva (EO) 13636: "Improving Critical
+                    Infrastructure Cybersecurity". Isto iniciou o trabalho do NIST com o setor privado dos EUA para
+                    "identificar padrões de consenso voluntários existentes e melhores práticas da indústria para
+                    incorporá-los em uma Estrutura de Segurança Cibernética". O resultado dessa colaboração foi o NIST
+                    Cybersecurity Framework Versão 1.0.</p>
+                <p>O Cybersecurity Enhancement Act (CEA) de 2014 ampliou os esforços do NIST no desenvolvimento do
+                    Cybersecurity Framework. Hoje, o NIST CSF ainda é uma das estruturas de segurança mais amplamente
+                    adotadas em todos os setores dos EUA.</p>
+            </section>
+
+            <section id="estrutura">
+                <h2>Estrutura central do NISTCybersecurity Framework</h2>
+                <p>O NIST Cybersecurity Framework inclui funções, categorias, subcategorias e referências informativas.
+                </p>
+                <p>As funções fornecem uma visão geral dos protocolos de segurança de melhores práticas. As funções não
+                    devem ser etapas processuais, mas devem ser executadas “simultaneamente e continuamente para formar
+                    uma cultura operacional que aborde o risco dinâmico de segurança cibernética”. Categorias e
+                    subcategorias fornecem planos de ação mais concretos para departamentos ou processos específicos
+                    dentro de uma organização. </p>
+                <p>Exemplos de funções e categorias do NIST incluem o seguinte:</p>
+                <ul class="extra-lista"></ul>
+                <li>Identificar: para se proteger contra ataques cibernéticos, a equipe de segurança cibernética precisa
+                    de um entendimento completo de quais são os ativos e recursos mais importantes da organização. A
+                    função de identificação inclui categorias como gerenciamento de ativos, ambiente de negócios,
+                    governança, avaliação de riscos, estratégia de gerenciamento de riscos e gerenciamento de riscos da
+                    cadeia de suprimentos.</li>
+                <li>Proteger: a função de proteção abrange grande parte dos controles de segurança técnica e física para
+                    desenvolver e implementar salvaguardas apropriadas e proteger a infraestrutura crítica. Essas
+                    categorias são Gerenciamento de identidade e controle de acesso, Conscientização e treinamento,
+                    Segurança de dados, Processos e procedimentos de proteção de informações, Manutenção e Tecnologia de
+                    proteção.</li>
+                <li>Detectar: a função de detecção implementa medidas que alertam uma organização sobre ataques
+                    cibernéticos. As categorias de detecção incluem anomalias e eventos, monitoramento contínuo de
+                    segurança e processos de detecção.</li>
+                <li>Responder: as categorias de funções de resposta garantem a resposta adequada a ataques cibernéticos
+                    e outros eventos de segurança cibernética. As categorias específicas incluem Planejamento de
+                    resposta, Comunicações, Análise, Mitigação e Melhorias.</li>
+                <li>Recuperar: as atividades de recuperação implementam planos de resiliência cibernética e garantem a
+                    continuidade dos negócios em caso de ataque cibernético, violação de segurança ou outro evento de
+                    segurança cibernética. As funções de recuperação são melhorias de planejamento de recuperação e
+                    comunicações.</li>
+                </ul>
+                <p>As referências informativas do NIST CSF estabelecem correlação direta entre as funções, categorias,
+                    subcategorias e os controles de segurança específicos de outras estruturas. Essas estruturas incluem
+                    o Center for Internet Security (CIS) Controls®, COBIT 5, International Society of Automation (ISA)
+                    62443-2-1:2009, ISA 62443-3-3:2013, International Organization for Standardization e International
+                    Electrotechnical Commission 27001:2013 e NIST SP 800-53 Rev. 4.</p>
+                <p>O NIST CSF não informa como inventariar os dispositivos e sistemas físicos ou como inventariar as
+                    plataformas de software e aplicativos; apenas fornece uma lista de verificação de tarefas a serem
+                    concluídas. Uma organização pode escolher seu próprio método de como realizar o inventário. Se uma
+                    organização precisar de orientação adicional, ela pode consultar as referências informativas aos
+                    controles relacionados em outras normas complementares. Há muita liberdade no CSF para escolher as
+                    ferramentas que melhor atendem às necessidades do gerenciamento de riscos de segurança cibernética
+                    de uma organização.</p>
+
+            </section>
+
+            <section id="camadas">
+                <h2>Camadas de implementação do NIST Framework</h2>
+                <p>Para ajudar as organizações do setor privado a medir seu progresso na implementação do NIST
+                    Cybersecurity Framework, o framework identifica quatro níveis de implementação:</p>
+                <p>Nível 1 - Parcial: a organização está familiarizada com o NIST CSF e pode ter implementado alguns
+                    aspectos de controle em algumas áreas da infraestrutura. A implementação de atividades e protocolos
+                    de segurança cibernética foi reativa versus planejada. A organização tem consciência limitada dos
+                    riscos de segurança cibernética e carece de processos e recursos para permitir a segurança da
+                    informação.</p>
+                <p>Nível 2 - Risco informado: a organização está mais ciente dos riscos de segurança cibernética e
+                    compartilha informações informalmente. Falta um processo de gerenciamento de riscos de segurança
+                    cibernética planejado, repetível e proativo em toda a organização.</p>
+                <p>Nível 3 - Repetido: a organização e seus executivos seniores estão cientes dos riscos de segurança
+                    cibernética. Eles implementaram um plano repetido de gerenciamento de riscos de segurança
+                    cibernética em toda a organização. A equipe de segurança cibernética criou um plano de ação para
+                    monitorar e responder de forma eficaz aos ataques cibernéticos.</p>
+                <p>Nível 4 - Adaptativo: a organização agora é resiliente cibernética e usa lições aprendidas e
+                    indicadores preditivos para evitar ataques cibernéticos. A equipe de segurança cibernética melhora e
+                    aprimora continuamente as tecnologias e práticas de segurança cibernética da organização e se adapta
+                    às mudanças nas ameaças de maneira rápida e eficiente. Existe uma abordagem em toda a organização
+                    para o gerenciamento de riscos de segurança de informações como tomada de decisões, políticas,
+                    procedimentos e processos informados sobre riscos. As organizações adaptáveis incorporam o
+                    gerenciamento de riscos de segurança cibernética nas decisões orçamentárias e na cultura
+                    organizacional.</p>
+
+            </section>
+
+            <section id="estabelecer">
+                <h2>Estabelecendo um programa de gerenciamento de riscos de segurança cibernética do NIST Framework</h2>
+                <p>O NIST Cybersecurity Framework fornece um guia passo a passo sobre como estabelecer ou melhorar seu
+                    programa de gerenciamento de riscos de segurança de informações:</p>
+                <p>Priorizar e definir rescopo: crie uma ideia clara sobre o escopo do projeto e identifique as
+                    prioridades. Estabeleça os objetivos de negócios ou missão de alto nível, as necessidades de
+                    negócios e determine a tolerância ao risco da organização.</p>
+                <p>Orientar: faça um balanço dos ativos e sistemas da organização e identifique os regulamentos
+                    aplicáveis, a abordagem de risco e as ameaças às quais a organização pode estar exposta.</p>
+                <p>Criar um perfil atual: um perfil atual é uma captura instantânea de como a organização está
+                    gerenciando o risco no momento, conforme definido pelas categorias e subcategorias do CSF.</p>
+                <p>Conduzir uma avaliação de risco: avalie o ambiente operacional, riscos emergentes e informações sobre
+                    ameaças à segurança cibernética para determinar a probabilidade e a gravidade de um evento de
+                    segurança cibernética que pode afetar a organização.</p>
+                <p>Criar um perfil de destino: um perfil de destino representa o objetivo de gerenciamento de riscos da
+                    equipe de segurança de informações.</p>
+                <p>Determine, analise e priorize lacunas: ao identificar as lacunas entre o perfil atual e o de destino,
+                    a equipe de segurança de informações pode criar um plano de ação, incluindo marcos mensuráveis e
+                    recursos (pessoas, orçamento, tempo) necessários para preencher essas lacunas.</p>
+                <p>Implementar plano de ação: implemente o plano de ação definido na Etapa 6.</p>
+
+
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p>Email: securityplus@gmail.com</p>
+                <p>Telefone: (61) 4002-8922</p>
+                <p>Endereço: SEP Sul Trecho 713/913, SHCS, Brasília - DF, 70390-135</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links relacionados</h3>
+                <ul>
+                    <li><a href="https://www.nist.gov/cyberframework" target="_blank">Site Oficial do NIST</a></li>
+                    <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA -
+                            Vulnerabilidades</a></li>
+                    <li><a href="https://www.nist.gov/publications" target="_blank">Publicações NIST</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/seuusuario" target="_blank"><i data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/seuperfil" target="_blank"><i data-lucide="linkedin"></i></a>
+                <a href="https://instagram.com/seuinsta" target="_blank"><i data-lucide="instagram"></i></a>
+            </div>
+
+        </div>
+        <div class="footer-missao">
+            <p>Promovendo a cibersegurança com tecnologia, conhecimento e inovação.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Segurança Cibernética. Todos os direitos reservados.</p>
+        </div>
+
+
+    </footer>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretrizes NIST</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .container-nist {
+            display: flex;
+            gap: 40px;
+            padding: 40px;
+            flex-wrap: nowrap;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+
+        .menu-lateral {
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+            background: linear-gradient(90deg #3533cd);
+            border-radius: 8px;
+            padding: 20px;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+            align-self: flex-start;
+        }
+
+
+
+
+        .menu-lateral ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-lateral li {
+            margin: 12px 0;
+        }
+
+        .menu-lateral a {
+            color: #cfd8e3;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s, transform 0.2s;
+            display: block;
+            padding: 6px 8px;
+            border-radius: 6px;
+        }
+
+        .menu-lateral a:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #f39c12;
+            transform: translateX(5px);
+        }
+
+        .conteudo-nist {
+            flex: 3;
+            min-width: 320px;
+
+        }
+
+        .conteudo-nist section {
+            margin-bottom: 60px;
+            background: linear-gradient(90deg #3533cd);
+            padding: 30px;
+
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+        }
+
+        .conteudo-nist h2 {
+            font-size: 50px;
+            color: #00e0ff;
+            margin-bottom: 20px;
+            border-left: 5px solid #00e0ff;
+            ;
+            padding-left: 15px;
+
+
+
+
+        }
+
+        .conteudo-nist p {
+            font-size: 17px;
+            text-align: justify;
+            line-height: 1.8;
+            color: #e0e0e0;
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .container-nist {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .menu-lateral {
+                position: relative;
+                top: auto;
+                max-width: 100%;
+                background: #1e2d5c;
+            }
+        }
+
+
+        .extra-lista {
+            list-style: disc;
+            margin-left: 20px;
+            color: #e0e0e0;
+            font-size: 17px;
+        }
+
+        section img {
+            display: block;
+            margin: 0px auto;
+            width: 100%;
+
+            height: 700px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="linha_do_tempo.html">Linha do Tempo</a></li>
+                <li><a href="banco_dados.html">Banco de Dados</a></li>
+                <li><a href="ferramenta_monitoramento.html">Ferramentas</a></li>
+                <li><a href="diretrizes_nist.html">NIST</a></li>
+                <li><a href="iso_27001.html">ISO 27001</a></li>
+                <li><a href="cobit.html">COBIT</a></li>
+                <li><a href="framework.html">Framework</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <img src="iso_27001.png" alt="">
+    </section>
+
+    <div class="container-nist">
+        <aside class="menu-lateral">
+
+            <ul>
+                <li><a href="#o_que_e">O que é ISO 27001?</a></li>
+                <li><a href="#sgsi">O que é um SGSI?</a></li>
+                <li><a href="#beneficios">Benefícios da conformidade e certificação ISO 27001</a></li>
+                <li><a href="#disposicoes">Disposições ISO 27001</a></li>
+                <li><a href="#requisitos">Requisitos da ISO 27001</a></li>
+                <li><a href="#certificacao">Certificação ISO 27001</a></li>
+            </ul>
+        </aside>
+
+        <main class="conteudo-nist">
+            <section id="o_que_e">
+                <h2>O que é ISO 27001?</h2>
+                <p>A ISO/IEC 27001, mais comumente conhecida como ISO 27001, é o principal padrão de segurança da
+                    informação reconhecido globalmente, desenvolvido em conjunto pela Organização Internacional para
+                    Padronização (ISO) e pela Comissão Eletrotécnica Internacional (IEC). </p>
+                <p>A ISO 27001 fornece uma abordagem sistemática, estruturada e baseada em riscos para gerenciar e
+                    proteger ativos de informações confidenciais dentro de uma organização de qualquer tamanho, em
+                    qualquer indústria ou setor econômico. </p>
+                <p>Especificamente, a norma ISO 27001 é um conjunto de requisitos para definir, implementar, operar e
+                    aprimorar um sistema de gestão de segurança da informação (SGSI) dentro de uma organização. Na
+                    prática, ela fornece uma estrutura abrangente para que as organizações gerenciem e protejam seus
+                    dados sensíveis e outras informações, reduzindo o risco de violações de dados, ataques cibernéticos
+                    e outros incidentes de segurança.</p>
+                <p>Publicada pela primeira vez em 2005, a ISO 27001 passou por revisão em 2013 e, mais recentemente, em
+                    2022. A versão atual desta norma internacional é chamada ISO 27001:2002. </p>
+                <p>A ISO 27001 faz parte da ISO 27000 (formalmente ISO/IEC 27001), uma família de padrões desenvolvida
+                    pela ISO e pela IEC para ajudar as organizações a proteger a segurança de suas informações./p>
+                <p>Para a compreensão integral do que é COBIT se faz necessária a avaliação do conceito de governança de
+                    TI, que é responsável por:</p>
+            </section>
+
+            <section id="sgsi">
+                <h2>O que é um SGSI?</h2>
+                <p>Um SGSI é um conjunto de políticas, procedimentos e controles que regem como uma organização gerencia
+                    seus riscos de segurança da informação e inclui requisitos como avaliação de riscos, gerenciamento
+                    de ativos, controle de acesso, criptografia, gerenciamento de incidentes e muito mais.</p>
+                <p>O objetivo de um SGSI é proteger:</p>
+
+                <ul class="extra-lista">
+                    <li>Confidencialidade da informação , impedindo a divulgação não autorizada de informações</li>
+                    <li>Integridade da informação , garantindo que a informação seja precisa e completa</li>
+                    <li>Disponibilidade de informações , garantindo que as informações estejam acessíveis quando
+                        necessário.</li>
+
+                </ul>
+
+                <p>Um SGSI ajuda uma empresa a implementar controles de segurança consistentes que podem se adaptar a um
+                    ambiente de risco em constante mudança.</p>
+
+
+            </section>
+
+            <section id="beneficios">
+                <h2>Benefícios da conformidade e certificação ISO 27001</h2>
+                <p>Estabelecer um SGSI bem organizado com base na conformidade e certificação ISO 27001 pode permitir
+                    que as organizações:</p>
+
+                <ul class="extra-lista">
+                    <li>Reduzir a vulnerabilidade à ameaça crescente de ataques cibernéticos</li>
+                    <li>Responda de forma mais rápida e eficaz aos riscos de segurança da informação em evolução</li>
+                    <li>Ajude a garantir que ativos como demonstrações financeiras, propriedade intelectual (PI), dados
+                        de funcionários e informações confiadas à organização por terceiros permaneçam intactos,
+                        confidenciais e disponíveis conforme necessário.</li>
+                    <li>Fornecer uma estrutura de segurança de informações gerenciada centralmente que proteja as
+                        informações de um ponto de controle</li>
+                    <li>Preparar pessoas, processos e tecnologia em toda a organização para enfrentar riscos baseados em
+                        tecnologia e outras ameaças</li>
+                    <li>Informações seguras em todas as formas, sejam elas em papel, na nuvem ou digitais</li>
+                    <li>Custos mais baixos aumentando a eficiência e reduzindo gastos desnecessários em tecnologia de
+                        segurança cibernética ineficaz</li>
+                    <li>Cumprir os requisitos legais e regulamentares</li>
+                    <li>Melhore a reputação e a confiança do cliente</li>
+
+
+
+
+
+
+                </ul>
+
+
+            </section>
+
+            <section id="disposicoes">
+                <h2>Disposições ISO 27001</h2>
+                <p>A ISO 27001 descreve um processo abrangente que as organizações devem seguir ao criar e manter um
+                    SGSI: </p>
+
+                <ul class="extra-lista">
+                    <li>Avaliação de risco — identificar e avaliar potenciais incidentes de segurança da informação que
+                        podem ocorrer envolvendo informações e dados de uma empresa</li>
+                    <li>Processo de gestão de riscos — implementar controlos de segurança de informação relevantes para
+                        proteger contra esses incidentes de segurança e reduzir o risco de segurança de informação</li>
+                    <li>Tratamento de riscos — mitigue os riscos ao longo do tempo e monitore e revise a eficácia desses
+                        controles continuamente para ajudar a impulsionar a melhoria contínua da proteção de dados e da
+                        segurança das informações dentro de uma organização.</li>
+
+                </ul>
+
+
+                <p>Além disso, a ISO 27001 ajuda as organizações a proteger a autenticidade das informações, o que
+                    significa que a identidade dos usuários e sistemas pode ser verificada durante todo o ciclo de vida
+                    das informações, e ajuda a garantir a não repúdio, o que significa que quaisquer transações
+                    relacionadas às informações podem ser rastreadas e verificadas.</p>
+
+
+            </section>
+
+            <section id="requisitos">
+                <h2>Requisitos da ISO 27001</h2>
+                <p>Para recapitular brevemente, a ISO 27001 exige que as organizações:</p>
+
+                <ul class="extra-lista">
+                    <li>Examinar sistematicamente seus riscos de segurança, incluindo ameaças, vulnerabilidades e
+                        impactos potenciais</li>
+                    <li>Projetar e implementar um conjunto abrangente de controles de segurança da informação e outras
+                        formas de tratamento de risco para lidar com riscos considerados inaceitáveis</li>
+                    <li>Adotar um processo de gestão abrangente para garantir que os controles de segurança da
+                        informação continuem atendendo às necessidades e aos objetivos de segurança da empresa de forma
+                        contínua.</li>
+
+                </ul>
+
+
+                <p>A ISO 27001 também exige que as empresas estabeleçam um SGSI adaptado às suas necessidades e riscos
+                    comerciais específicos.</p>
+                <p>A própria norma ISO 27001 compreende duas partes:</p>
+
+                <ul class="extra-lista">
+                    <li>Onze (11) cláusulas obrigatórias (0 a 10) que descrevem os requisitos em determinadas áreas</li>
+                    <li>Anexo A , que fornece diretrizes para 93 objetivos de controle , cada um dos quais é uma prática
+                        específica que pode ser implementada para reduzir riscos a níveis aceitáveis.</li>
+
+
+                </ul>
+                <h3>Cláusulas obrigatórias</h3>
+                <p>A seção principal da ISO 27001 — as 11 cláusulas — apresenta inicialmente os fundamentos da norma nas
+                    cláusulas 0 a 3, que fornecem definições e resumos dos requisitos. As cláusulas 4 a 10 listam
+                    requisitos específicos obrigatórios para a conformidade com a ISO 27001:</p>
+                <p>Cláusula 4 — O contexto da organização é um requisito holístico para que a gestão descubra, analise e
+                    compreenda questões externas e internas relevantes, que podem incluir desafios regulatórios, e
+                    identifique e considere as partes interessadas.</p>
+                <p>Cláusula 5 — Liderança detalha os requisitos para uma liderança adequada, incluindo a exigência do
+                    comprometimento da alta administração, com funções e responsabilidades claramente definidas. A
+                    Cláusula 5 especifica que a administração deve:</p>
+                <ul class="extra-lista">
+                    <li>Estabelecer objetivos de segurança alinhados com a direção estratégica e os objetivos da
+                        organização</li>
+                    <li>Fornecer os recursos adequados necessários para dar suporte a um SGSI e às contribuições das
+                        pessoas para ele</li>
+                    <li>Especifique uma política de segurança da informação ISO 27001 de alto nível que seja documentada
+                        e comunicada em toda a organização e a todas as partes interessadas, desde funcionários a
+                        acionistas, reguladores governamentais e outros.</li>
+
+                </ul>
+                <p>Cláusula 6 — O planejamento é um requisito para identificar e levar em conta os riscos e
+                    oportunidades de segurança da informação (a avaliação de risco de segurança da informação),
+                    estabelecer objetivos de segurança e controle da informação com base nessa avaliação e criar um
+                    plano de tratamento de risco incorporando controles relevantes do Anexo A.</p>
+                <p>Cláusula 7 — Suporte descreve como dar suporte a um SGSI e a uma estrutura de segurança robusta,
+                    fornecendo recursos adequados, garantindo a compreensão dos funcionários sobre a gestão da segurança
+                    da informação e comunicando-se adequadamente dentro e fora da organização. A gerência deve atualizar
+                    e manter determinada documentação, incluindo um plano de comunicação.</p>
+                <p>Cláusula 8 — A operação exige determinados processos de segurança da informação que devem ser
+                    planejados, implementados e controlados. É aqui que a avaliação e o tratamento de riscos são
+                    colocados em prática.</p>
+                <p>Cláusula 9 — A Avaliação de Desempenho é um requisito que exige que as organizações monitorem,
+                    mensuram, analisem e avaliem seu SGSI, verificando regularmente os KPIs e realizando auditorias
+                    internas. Em intervalos definidos, a alta administração deve revisar os KPIs relacionados ao SGSI e
+                    à ISO 27001 para garantir que ainda sejam relevantes.</p>
+                <p>Cláusula 10 — Melhoria: Após a avaliação de desempenho, as organizações devem tomar as medidas
+                    corretivas necessárias, denominadas melhorias. Isso significa que a gestão deve agir para eliminar
+                    as causas das chamadas "não conformidades". Além disso, deve implementar um processo de melhoria
+                    contínua.</p>
+
+                <h3>Controles do Anexo A</h3>
+                <p>O Anexo A da ISO 27001:2022 lista 93 salvaguardas ou controles que as organizações podem utilizar
+                    para reduzir riscos e cumprir os requisitos de segurança de partes interessadas, como órgãos
+                    reguladores e parceiros. Parte da documentação exigida pela ISO 27001 é a Declaração de
+                    Aplicabilidade, na qual a organização detalha os controles específicos do Anexo A a serem
+                    implementados, marcando-os como "aplicáveis".</p>
+                <p>A ISO 27001:2022 também estabelece quatro domínios para os 93 controles:</p>
+                <p>Anexo A.5—Os controles organizacionais são 37 controles a serem implementados definindo as regras a
+                    serem seguidas, bem como o comportamento esperado de usuários, equipamentos, software e sistemas
+                    (por exemplo, uma Política de Controle de Acesso).</p>
+                <p>Anexo A.6 — Controles de pessoas são 8 controles implementados por meio do compartilhamento de
+                    conhecimento, educação, habilidades e/ou experiência com pessoas para capacitá-las a executar suas
+                    respectivas atividades de uma forma que proteja a segurança da informação (por exemplo, treinamento
+                    ISO 27001).</p>
+                <p>Anexo A.7 — Os controles físicos são 14 controles implementados por meio da proteção e segurança de
+                    equipamentos ou dispositivos que interagem fisicamente com pessoas e objetos (por exemplo, câmeras
+                    de CFTV ou sistemas de alarme).</p>
+                <p>Anexo A.8—Controles tecnológicos são 34 controles, focados em TI e comunicações, que são
+                    implementados principalmente em sistemas de informação com software, hardware e firmware (por
+                    exemplo, software de backup ou antivírus).</p>
+                <p>Observe que a ISO 27001:2022 inclui 21 controles do Anexo A a menos do que a versão anterior, a ISO
+                    27001:2013. O número de controles foi reduzido pela fusão de 57 controles, exclusão de 3 controles,
+                    manutenção de 35 controles sem alterações e introdução de 11 novos controles. Os novos controles se
+                    concentram em serviços em nuvem, prontidão para continuidade dos negócios, inteligência contra
+                    ameaças, monitoramento de segurança física, mascaramento de dados, exclusão de informações,
+                    prevenção de vazamento de dados, atividades de monitoramento, filtragem da web e codificação segura.
+                </p>
+
+
+
+            </section>
+
+            <section id="certificacao">
+                <h2>Certificação ISO 27001</h2>
+                <p>As empresas podem implementar a ISO 27001 para se beneficiar das melhores práticas que ela oferece.
+                    Elas também podem optar por passar por um processo formal de certificação, que demonstra aos
+                    clientes e outras partes interessadas que estão comprometidas e são capazes de gerenciar informações
+                    com segurança e proteção. </p>
+                <p>Antes do início do processo de certificação, a empresa deve implementar um SGSI compatível, e a
+                    equipe de gestão da empresa deve determinar o escopo do SGSI especificamente para fins de
+                    certificação (por exemplo, pode limitar o escopo a uma única unidade de negócios ou local). A
+                    certificação resultante se aplicará apenas ao escopo limitado.</p>
+                <p>Em seguida, o SGSI deve passar por uma auditoria de certificação externa, de várias etapas, por um
+                    organismo de certificação credenciado para verificar a conformidade.</p>
+                <p>O processo de auditoria externa tem três etapas.</p>
+                <ul class="extra-lista">
+                    <li>Etapa 1: Revisão preliminar do SGSI. O organismo de certificação confirmará que a documentação
+                        essencial existe e está completa (por exemplo, para a Política de Segurança da Informação da
+                        organização, sua Declaração de Aplicabilidade (Declaração de Aplicabilidade - SoA) e seu Plano
+                        de Tratamento de Riscos (RTP).</li>
+                    <li>Etapa 2: Auditoria formal de conformidade. O organismo de certificação realiza uma auditoria
+                        mais detalhada, testando de forma independente o SGSI da organização para garantir que ele
+                        atenda aos requisitos da ISO 27001. A aprovação na Etapa 2 significa que a organização será
+                        certificada como em conformidade com a ISO 27001.</li>
+                    <li>Etapa 3: Revisão contínua. Após a certificação em conformidade com a ISO 27001, a organização
+                        deve realizar revisões de acompanhamento e auditorias internas para confirmar a conformidade ao
+                        longo do tempo.</li>
+
+                </ul>
+
+                <p>As organizações que já possuem a certificação ISO 27001 devem fazer a transição para a nova versão
+                    2022 até 31 de outubro de 2025, garantindo que tenham um SGSI atualizado e compatível.</p>
+                <p>De acordo com relatórios de 2022, existem mais de 70.000 certificados ISO 27001 em 150 países. Embora
+                    a maioria desses certificados seja focada em tecnologia da informação (TI), eles abrangem
+                    organizações de todos os setores econômicos.
+
+                </p>
+
+
+
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p>Email: securityplus@gmail.com</p>
+                <p>Telefone: (61) 4002-8922</p>
+                <p>Endereço: SEP Sul Trecho 713/913, SHCS, Brasília - DF, 70390-135</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links relacionados</h3>
+                <ul>
+                    <li><a href="https://www.nist.gov/cyberframework" target="_blank">Site Oficial do NIST</a></li>
+                    <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA -
+                            Vulnerabilidades</a></li>
+                    <li><a href="https://www.nist.gov/publications" target="_blank">Publicações NIST</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/seuusuario" target="_blank"><i data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/seuperfil" target="_blank"><i data-lucide="linkedin"></i></a>
+                <a href="https://instagram.com/seuinsta" target="_blank"><i data-lucide="instagram"></i></a>
+            </div>
+
+        </div>
+        <div class="footer-missao">
+            <p>Promovendo a cibersegurança com tecnologia, conhecimento e inovação.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Segurança Cibernética. Todos os direitos reservados.</p>
+        </div>
+
+
+    </footer>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

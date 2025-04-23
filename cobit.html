@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diretrizes NIST</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .container-nist {
+      display: flex;
+      gap: 40px;
+      padding: 40px;
+      flex-wrap: nowrap;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    .menu-lateral {
+      flex: 1;
+      min-width: 200px;
+      max-width: 250px;
+      background: linear-gradient(90deg #3533cd);
+      border-radius: 8px;
+      padding: 20px;
+      height: fit-content;
+      position: sticky;
+      top: 100px;
+      align-self: flex-start;
+    
+    }
+
+    .menu-lateral ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu-lateral li {
+      margin: 12px 0;
+    }
+
+    .menu-lateral a {
+      color: #cfd8e3;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s, transform 0.2s;
+      display: block;
+      padding: 6px 8px;
+      border-radius: 6px;
+    }
+
+    .menu-lateral a:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #f39c12;
+      transform: translateX(5px);
+    }
+
+    .conteudo-nist {
+      flex: 3;
+      min-width: 320px;
+
+    }
+
+    .conteudo-nist section {
+      margin-bottom: 60px;
+      background: linear-gradient(90deg #3533cd);
+      padding: 30px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    }
+
+    .conteudo-nist h2 {
+      font-size: 50px;
+      color: #00e0ff;
+      margin-bottom: 20px;
+      border-left: 5px solid #00e0ff;
+      padding-left: 15px;
+    }
+
+    .conteudo-nist p {
+      font-size: 17px;
+      text-align: justify;
+      line-height: 1.8;
+      color: #e0e0e0;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .container-nist {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .menu-lateral {
+        position: relative;
+        top: auto;
+        max-width: 100%;
+        background: #1e2d5c;
+      }
+    }
+
+    .extra-lista {
+      list-style: disc;
+      margin-left: 20px;
+      color: #e0e0e0;
+      font-size: 17px;
+    }
+
+    section img {
+      display: block;
+      margin: 0px auto;
+      width: 100%;
+      height: 700px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="linha_do_tempo.html">Linha do Tempo</a></li>
+        <li><a href="banco_dados.html">Banco de Dados</a></li>
+        <li><a href="ferramenta_monitoramento.html">Ferramentas</a></li>
+        <li><a href="diretrizes_nist.html">NIST</a></li>
+        <li><a href="iso_27001.html">ISO 27001</a></li>
+        <li><a href="cobit.html">COBIT</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section>
+    <img src="cobit.png" alt="">
+  </section>
+
+  <div class="container-nist">
+    <aside class="menu-lateral">
+
+      <ul>
+        <li><a href="#o_que_e">O que é o COBIT?</a></li>
+        <li><a href="#historia">História do COBIT</a></li>
+        <li><a href="#beneficios">Benefícios do COBIT para uma empresa</a></li>
+        <li><a href="#para_quem">Para quem é destinada a certificação?</a></li>
+        <li><a href="#certificacao">Como conquistar a certificação</a></li>
+      </ul>
+    </aside>
+
+    <main class="conteudo-nist">
+      <section id="o_que_e">
+        <h2>O que é o COBIT?</h2>
+        <p>COBIT é um modelo de gestão de governança de TI que funciona a partir da aplicação de um framework (um
+          método) baseado em 4 fundamentos e 5 princípios. Ele é capaz de proporcionar uma visão holística do negócio,
+          facilitando a gestão eficiente de TI de maneira que o setor possa contribuir para o crescimento de toda a
+          organização. </p>
+        <p>Esse framework permite que os gestores vejam a tecnologia como parte de todas as áreas da empresa e não
+          apenas do setor de TI em si. </p>
+        <p>Estamos falando de um framework que permite que a organização faça a governança corporativa pensando nos
+          serviços gerenciados de TI, na informação e nas tecnologias que a suportam. </p>
+        <p>Sem dúvida, uma das áreas que mais cresce no mercado corporativo é a área de TI. Sejam empresas
+          especializadas em serviços de tecnologia ou empresas que usam a tecnologia a favor do desenvolvimento do core
+          business do negócio, a TI está cada vez mais presente como fator indispensável dentro das organizações. </p>
+        <p>Uma falha no setor pode ser um risco para a segurança da empresa, dos seus dados, dos clientes e da sua
+          reputação, bem como de toda a capacidade competitiva da organização. </p>
+        <p>E essa é uma das razões para a adoção do framework. Ele contribui para que o profissional de TI seja capaz de
+          otimizar e ampliar o alcance e o poder da governança de TI. </p>
+        <p>Para a compreensão integral do que é COBIT se faz necessária a avaliação do conceito de governança de TI, que
+          é responsável por:</p>
+        <ul class="extra-lista">
+          <li>Administrar informações</li>
+          <li>Controlar os serviços de TI</li>
+          <li>Garantir que a tecnologia seja uma aliada para os colaboradores</li>
+          <li>Garantir a segurança das informações</li>
+          <li>Administrar os dados</li>
+          <li>Gerenciar problemas</li>
+          <li>Fazer a gestão de TI</li>
+        </ul>
+        <p>Em suma, a certificação comprova o domínio, por parte do profissional, do conjunto de boas práticas de
+          governança de TI.</p>
+        <p>Estamos falando de um framework e de uma certificação mundialmente conhecida, cada vez mais relevante para
+          profissionais e empresas que buscam a excelência na aplicação da TI no desenvolvimento de seus negócios e na
+          segurança de suas informações. </p>
+        <p>Ele foi idealizado de acordo com as exigências do Committee of Sponsoring Organizations of the Treadway
+          Commission, ou simplesmente COSO, um padrão de controles internos adotado por empresas do mundo todo como um
+          modelo de gestão de riscos dentro da área de tecnologia.</p>
+      </section>
+
+      <section id="historia">
+        <h2>História do COBIT</h2>
+        <p>A ISACA lançou 6 versões do COBIT até agora, sendo a primeira em 1996. Lançada em 1998, a segunda versão
+          expandiu a metodologia para além da auditoria. O COBIT 3 veio em 2000, com a inclusão de técnicas de
+          gerenciamento de TI e controle de informações, que continuam no modelo mais recente.</p>
+        <p>No COBIT 4 e 4.1, lançados em 2005 e 2007, a ISACA incorporou práticas de governança de TI ao framework. Em
+          2012, o COBIT 5 foi disponibilizado para as empresas com a integração de quadros e recursos da Biblioteca de
+          Infraestrutura da Tecnologia de Informação (ITIL), além de ter incorporado padrões da Organização
+          Internacional de Padronização (ISO). Ele ganhou um complemento no ano seguinte.</p>
+        <p>A versão mais atualizada do framework da ISACA é o COBIT 2019, que trouxe orientações para criar estratégias
+          de governança de TI mais flexíveis, colaborativas e adequadas aos últimos avanços tecnológicos.</p>
+
+        <h3>O que mudou com o COBIT 2019</h3>
+        <p>A principal mudança do COBIT 2019 em relação ao COBIT 5 é uma definição mais clara do que é (e do que não é)
+          o modelo proposto pela ISACA:</p>
+        <p>O COBIT 2019 é um framework para governança e gerenciamento de TI corporativa em toda a organização.</p>
+        <p>O COBIT 2019 NÃO É um framework de organização de processos de negócios, gerenciamento de tecnologia, tomada
+          de decisões relacionadas a TI, estabelecimento de estratégias e de arquitetura de TI.</p>
+        <p>O COBIT 2019 traz 40 objetivos de governança e gerenciamento, além de estar integrado a outros frameworks
+          como ITIL, CMMI e TOGAF. Ainda, ele 2019 dá mais liberdade para as empresas personalizarem as estratégias de
+          governança de TI, ao incluir medições de maturidade e capacidade no sistema de gerenciamento de desempenho.
+        </p>
+        <p>A atualização também apresentou o conceito de "área de foco" para descrever questões específicas relacionadas
+          aos objetivos de gerenciamento ou governança de TI, como segurança cibernética, transformação digital e cloud
+          computing.</p>
+        <p>O COBIT 2019 é explicado em mais detalhes em quatro guias da ISACA, que são:</p>
+        <ul class="extra-lista">
+          <li>COBIT 2019 Framework – Introdução e metodologia: apresenta os princípios de governança de TI, explica
+            conceitos com exemplos e detalha a estrutura geral do framework</li>
+          <li>COBIT 2019 Framework – Objetivos de governança e gerenciamento: traz uma lista dos 40 objetivos de
+            governança e gerenciamento. Cada objetivo é relacionado a processos, metas e boas práticas de gerenciamento
+            e governança de TI</li>
+          <li>COBIT 2019 Design Guide: orientações de como adaptar o framework à realidade e aos objetivos de negócio da
+            sua organização</li>
+          <li>COBIT 2019 Implementation Guide: o último guia explica como integrar o que já foi feito com o COBIT 5 à
+            versão mais recente do framework, além de orientações gerais para implementação de estratégias de
+            gerenciamento e governança de TI.</li>
+        </ul>
+
+      </section>
+
+      
+
+      <section id="beneficios">
+        <h2>Quais são os benefícios desse framework?</h2>
+        <p>Além de fornecer governança para o setor de tecnologia, o COBIT 5 também ajuda sua organização a gerenciar
+          riscos e recursos de forma eficaz. Sua implementação pode contribuir para a conquista das principais
+          características de sucesso, estabelecendo controles em seu departamento de TI. </p>
+        <p>A vantagem mais óbvia da implementação do framework é que ele alinha as metas de TI e de negócios. Com as
+          constantes demandas, as empresas devem ser capazes de gerenciar seus recursos de TI de forma eficaz para
+          impulsionar a estratégia da empresa. </p>
+        <p>Vamos conhecer esses benefícios com mais detalhes? Confira a seguir:</p>
+        <ul class="extra-lista">
+          <li>Eficiência e produtividade do time de TI</li>
+          <li>Ajuda o time de TI alcançar os objetivos de negócio</li>
+          <li>Alinhamento ao compliance padrão</li>
+
+        </ul>
+        <h3>Eficiência e produtividade do time de TI</h3>
+        <p>O COBIT 5 é um framework que se concentra na camada estratégica da empresa. Suas matrizes RACI podem melhorar
+          a transparência e tornar as funções de controle de processo mais claras.</p>
+        <p>No entanto, pode ser um desafio fazer com que as pessoas usem a sua estrutura logo de início. O melhor
+          caminho para começar pode ser por meio de projetos pequenos. Dessa forma, ele pode ser usado como uma
+          estrutura para abordar objetivos de negócios específicos.</p>
+        <p>Por conta dessas características, ele pode aumentar a eficiência e a produtividade de uma equipe de TI quando
+          implementado corretamente. Afinal, seu objetivo é aumentar a eficiência geral de uma organização,
+          simplificando suas operações.</p>
+        <p>Ao maximizar a eficiência e reduzir o desperdício, a equipe de TI pode se tornar mais eficaz, gerando
+          resultados de maior qualidade.</p>
+        <p>Outra vantagem é que ele ajuda as empresas a manter a conformidade com vários regulamentos e padrões. Assim,
+          elas podem evitar perdas financeiras desnecessárias e aprimorar seus sistemas de segurança.</p>
+
+        <h3>Ajuda para o time de TI alcançar os objetivos do negócio</h3>
+        <p>Um dos principais objetivos do framework é ajudar as organizações a alinhar as metas de TI às dos líderes de
+          negócios. Ele faz isso criando vínculos entre os objetivos de tecnologia e de negócios e de TI, funcionando
+          como um processo para preencher essas lacunas.</p>
+        <p>Também ajuda a promover a colaboração entre a equipe de TI e outros departamentos internos e externos.</p>
+        <p>Além disso, fornece uma estrutura para avaliar o desempenho atual da equipe de tecnologia, o que possibilita
+          identificar oportunidades de otimização que podem contribuir para a conquista das metas.</p>
+
+        <h3>Alinhamento ao compliance padrão</h3>
+        <p>As empresas que implementam os procedimentos COBIT podem ter certeza de que seus sistemas de informação
+          atenderão aos padrões da indústria. Esses procedimentos beneficiam todas as partes interessadas, incluindo
+          funcionários, clientes e fornecedores.</p>
+        <p>Essa metodologia é amplamente adotada e é uma boa maneira de garantir que os sistemas de informação de uma
+          empresa estejam em conformidade.</p>
+
+      </section>
+
+      <section id="para_quem">
+        <h2>Quem deve buscar a certificação COBIT?</h2>
+        <p>A certificação comprova que o profissional compreende o que é e sabe aplicar o framework para a gestão de
+          governança em TI de maneira holística, seguindo todos os demais princípios do modelo. </p>
+        <p>Em outras palavras, garante que o profissional é capaz de usar o framework para otimizar o uso da Tecnologia
+          da Informação em toda a empresa.</p>
+        <p>A partir disso, é capaz de contribuir para o alcance geral de metas e objetivos, indo muito além das
+          “paredes” do setor de TI e agindo de forma a otimizar os resultados de toda a empresa, a partir do uso da
+          Tecnologia da Informação. </p>
+        <p>Nesse sentido, a busca pela certificação é aconselhada a profissionais de TI em diversos estágios da
+          carreira, que desejam atuar dentro de organizações que usam a tecnologia de maneira estratégica para ampliar
+          sua eficiência e resultados em todas as áreas. </p>
+        <p>A certificação COBIT é ideal para gestores de TI que desejam controlar serviços da área, sejam eles
+          oferecidos por profissionais que atuam internamente, ou seja, que fazem parte do setor de TI interno da
+          organização, ou para a gestão de empresas e profissionais terceirizados. </p>
+        <p>Essa certificação contribui para que o profissional tenha melhores chances no mercado de trabalho, pois
+          comprova suas habilidades, oferecendo maior valor para as empresas contratantes. </p>
+
+      </section>
+
+      <section id="certificacao">
+        <h2>Como conseguir a certificação?</h2>
+        <p>O exame para a certificação COBIT é aplicado pela ISACA, que também é a responsável por organizar o framework
+          em questão. Entretanto, também existem outras organizações que aplicam a prova, como a APMG International.
+        </p>
+        <p>De maneira geral é possível se “graduar” em três níveis de certificação:</p>
+        <ul class="extra-lista">
+          <li>COBIT 5 Foundation;</li>
+          <li>COBIT 5 Implementation</li>
+          <li>COBIT 5 Assessor</li>
+
+        </ul>
+
+        <p>A certificação Foundation é o título que garante aos profissionais a versão mais atualizada do framework e
+          pode ser conquistada em uma prova online realizada em português. Para os outros níveis, a prova só está
+          disponível em inglês.</p>
+        <p>A prova da certificação é paga (em média R$800 por teste) composta de 50 questões objetivas, que devem ser
+          respondidas em até 40 minutos. </p>
+        <p>O candidato precisa atingir 50% de aproveitamento para obter a aprovação e receber o certificado. </p>
+        <p>A certificação não possui prazo de validade e o exame testa conhecimentos gerais e básicos do candidato em
+          governança de TI com a utilização do framework.</p>
+        <p>Para se preparar para o exame é importante buscar conhecimento em leituras e simulados (você encontra tudo na
+          internet). Uma preparação bem feita vai garantir que você não tenha que fazer a prova mais de uma vez.</p>
+
+
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Contato</h3>
+        <p>Email: securityplus@gmail.com</p>
+        <p>Telefone: (61) 4002-8922</p>
+        <p>Endereço: SEP Sul Trecho 713/913, SHCS, Brasília - DF, 70390-135</p>
+      </div>
+      <div class="footer-links">
+        <h3>Links relacionados</h3>
+        <ul>
+          <li><a href="https://www.nist.gov/cyberframework" target="_blank">Site Oficial do NIST</a></li>
+          <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA -
+              Vulnerabilidades</a></li>
+          <li><a href="https://www.nist.gov/publications" target="_blank">Publicações NIST</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/seuusuario" target="_blank"><i data-lucide="github"></i></a>
+        <a href="https://linkedin.com/in/seuperfil" target="_blank"><i data-lucide="linkedin"></i></a>
+        <a href="https://instagram.com/seuinsta" target="_blank"><i data-lucide="instagram"></i></a>
+      </div>
+
+    </div>
+    <div class="footer-missao">
+      <p>Promovendo a cibersegurança com tecnologia, conhecimento e inovação.</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Segurança Cibernética. Todos os direitos reservados.</p>
+    </div>
+
+
+  </footer>
+
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>

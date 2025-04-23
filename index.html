@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Segurança Cibernética</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      color: #333;
+    }
+
+    .carrossel {
+      height: 70vh;
+      overflow: hidden;
+      position: relative;
+      margin-top: 0;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+
+    .slide {
+      flex: 1 0 100%;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .servicos {
+      background: linear-gradient(90deg, #000000, #3533cd);
+      padding: 200px 40px;
+      color: #f0f0f0;
+    }
+
+    .servico-linha {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 60px;
+      flex-wrap: nowrap;
+    }
+
+
+    .servico-texto,
+    .servico-imagem {
+      flex: 1;
+      min-width: 300px;
+      max-width: 50%;
+      padding: 0;
+    }
+
+
+    .servico-texto h2 {
+      color: #00e0ff;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .servico-texto p {
+      font-size: 20px;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    .servico-texto button {
+      background-color: #00e0ff;
+      color: #000;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .servico-texto button:hover {
+      background-color: #00c4e0;
+    }
+
+    .servico-imagem {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .servico-imagem img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+
+
+
+    @media (max-width: 768px) {
+      .servico-linha {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .servico-linha.reverso {
+        flex-direction: column-reverse;
+      }
+
+      .servico-texto,
+      .servico-imagem {
+        max-width: 100%;
+      }
+    }
+
+    .servico-linha.reverso {
+      flex-direction: row-reverse;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="linha_do_tempo.html">Linha do Tempo</a></li>
+        <li><a href="banco_dados.html">Banco de Dados</a></li>
+        <li><a href="ferramenta_monitoramento.html">Ferramentas</a></li>
+        <li><a href="diretrizes_nist.html">NIST</a></li>
+        <li><a href="iso_27001.html">ISO 27001</a></li>
+        <li><a href="cobit.html">COBIT</a></li>
+        <li><a href="framework.html">Framework</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="carrossel">
+    <div class="slides">
+      <div class="slide"><img src="img1.jpg" alt="Segurança 1"></div>
+      <div class="slide"><img src="img2.jpg" alt="Segurança 2"></div>
+      <div class="slide"><img src="img3.jpg" alt="Segurança 3"></div>
+    </div>
+  </div>
+
+  <section class="servicos">
+    <div class="servico-linha">
+      <div class="servico-texto">
+        <h2>Monitoramento 24/7</h2>
+        <p>Oferecemos monitoramento contínuo de sua rede, identificando e respondendo rapidamente a incidentes de
+          segurança. Nossa equipe especializada está disponível 24 horas por dia, 7 dias por semana, garantindo
+          proteção constante contra ameaças cibernéticas.</p>
+        <button>Saiba mais</button>
+      </div>
+      <div class="servico-imagem">
+        <img src="monitoramento.jpg" alt="Monitoramento 24/7">
+      </div>
+    </div>
+
+    <div class="servico-linha reverso">
+      <div class="servico-texto">
+        <h2>Resposta a Incidentes</h2>
+        <p>Em caso de violação de segurança, nosso time de resposta a incidentes atua rapidamente para minimizar os
+          danos e restaurar a segurança do sistema. Nossas estratégias incluem análise forense e mitigação de
+          riscos.</p>
+        <button>Saiba mais</button>
+      </div>
+      <div class="servico-imagem">
+        <img src="planoresposta.png" alt="Resposta a Incidentes">
+      </div>
+    </div>
+
+    <div class="servico-linha">
+      <div class="servico-texto">
+        <h2>Gestão de Vulnerabilidades</h2>
+        <p>Avaliamos periodicamente a sua infraestrutura para identificar vulnerabilidades e implementamos as
+          correções necessárias. Nosso objetivo é garantir que sua empresa esteja protegida contra falhas de
+          segurança e ameaças emergentes.</p>
+        <button>Saiba mais</button>
+      </div>
+      <div class="servico-imagem">
+        <img src="vulnerabilidade.jpeg" alt="Gestão de Vulnerabilidades">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Contato</h3>
+        <p>Email: securityplus@gmail.com</p>
+        <p>Telefone: (61) 4002-8922</p>
+        <p>Endereço: SEP Sul Trecho 713/913, SHCS, Brasília - DF, 70390-135</p>
+      </div>
+      <div class="footer-links">
+        <h3>Links relacionados</h3>
+        <ul>
+          <li><a href="https://www.sans.org/cyber-security-training/operations-centers" target="_blank">SANS - SOC
+              Training</a></li>
+          <li><a
+              href="https://www.cyber.gov.au/acsc/view-all-content/publications/introducing-security-operations-centre-soc"
+              target="_blank">Cyber Gov AU</a></li>
+          <li><a href="https://www.cloudflare.com/learning/ddos/glossary/security-operations-center-soc/"
+              target="_blank">Cloudflare - SOC</a></li>
+          <li><a href="https://www.splunk.com/en_us/solutions/security-operations-center.html" target="_blank">Splunk -
+              SOC</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/seuusuario" target="_blank"><i data-lucide="github"></i></a>
+        <a href="https://linkedin.com/in/seuperfil" target="_blank"><i data-lucide="linkedin"></i></a>
+        <a href="https://instagram.com/seuinsta" target="_blank"><i data-lucide="instagram"></i></a>
+      </div>
+
+    </div>
+    <div class="footer-missao">
+      <p>Promovendo a cibersegurança com tecnologia, conhecimento e inovação.</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Segurança Cibernética. Todos os direitos reservados.</p>
+    </div>
+
+
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    let currentSlide = 0;
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    setInterval(nextSlide, 3000);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudo Técnico: MySQL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        main {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            margin: 2rem auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #05205b;
+        }
+
+        h2 {
+            border-left: 4px solid #0a53be;
+            padding-left: 12px;
+            background-color: #f7f9fc;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .section-icon {
+            color: #0a53be;
+        }
+
+        a {
+            color: #0a53be;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #003366;
+            text-decoration: underline;
+        }
+
+        pre {
+            background-color: #f7f9fc;
+            padding: 1rem;
+            border-left: 4px solid #0a53be;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .text-content {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .image-content {
+            max-width: 350px;
+            padding-right: 130px;
+        }
+
+        .image-content img {
+            width: 160%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+        }
+
+        h1,
+        h3 {
+            color: #05205b;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            border-left: 4px solid #0a53be;
+            padding-left: 12px;
+            background-color: #f7f9fc;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+
+
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        code {
+            background-color: #eaeaea;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            border-left: 4px solid #0a53be;
+            color: #2d2d2d;
+            font-size: 0.95rem;
+        }
+
+
+        ul {
+            list-style: disc;
+            margin-left: 1.5rem;
+        }
+
+        .section-icon {
+            color: #0a53be;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-content {
+                padding-right: 0;
+                text-align: center;
+            }
+
+            .image-content img {
+                width: 100%;
+                max-width: 350px;
+                height: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo do Site">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="linha_do_tempo.html">Linha do Tempo</a></li>
+                <li><a href="banco_dados.html">Banco de Dados</a></li>
+                <li><a href="ferramenta_monitoramento.html">Ferramentas</a></li>
+                <li><a href="diretrizes_nist.html"> NIST</a></li>
+                <li><a href="iso_27001.html">ISO 27001</a></li>
+                <li><a href="cobit.html">COBIT</a></li>
+                <li><a href="framework.html">Framework</a></li>
+                <li><a href="">Integrantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h1><i class="fas fa-database section-icon"></i>Estudo Técnico: Implementação do Banco de Dados MySQL
+                </h1>
+                <p>O MySQL é um sistema de gerenciamento de banco de dados relacional open-source, conhecido por sua
+                    performance, escalabilidade e facilidade de uso.</p>
+            </div>
+            <div class="image-content">
+                <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="Logo MySQL">
+            </div>
+        </div>
+
+        <section>
+            <h2><i class="fas fa-download section-icon"></i>2. Instalação do MySQL</h2>
+            <h3>A. Pré-requisitos</h3>
+            <ul>
+                <li>Sistema Operacional compatível</li>
+                <li>Dependências como <code>libaio</code> (Linux)</li>
+                <li>Definir arquitetura 32 ou 64 bits</li>
+            </ul>
+
+            <h3>B. Formas de Instalação</h3>
+            <p><strong>Linux:</strong></p>
+            <pre><code>sudo apt update
+sudo apt install mysql-server
+sudo systemctl start mysql</code></pre>
+
+            <p><strong>Windows:</strong> Usar MySQL Installer</p>
+            <p><strong>Docker:</strong></p>
+            <pre><code>docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=senha -d mysql:8.0</code></pre>
+
+            <h3>C. Verificação</h3>
+            <pre><code>mysql -u root -p</code></pre>
+        </section>
+
+        <section>
+            <h2>3. Configuração Inicial</h2>
+            <h3>A. Arquivo de Configuração</h3>
+            <p>Arquivo <code>my.cnf</code> ou <code>my.ini</code>. Parâmetros importantes:</p>
+            <ul>
+                <li><code>bind-address</code>, <code>max_connections</code>, <code>innodb_buffer_pool_size</code>,
+                    <code>sql_mode</code>
+                </li>
+            </ul>
+
+            <h3>B. Segurança</h3>
+            <pre><code>sudo mysql_secure_installation</code></pre>
+
+            <h3>C. Criação de Usuários</h3>
+            <pre><code>CREATE USER 'app_user'@'localhost' IDENTIFIED BY 'senha123';
+GRANT SELECT, INSERT, UPDATE ON banco_de_dados.* TO 'app_user'@'localhost';</code></pre>
+        </section>
+
+        <section>
+            <h2>4. Boas Práticas de Gestão</h2>
+            <h3>A. Segurança</h3>
+            <ul>
+                <li>Evitar uso de <code>root</code> por aplicações</li>
+                <li>Habilitar SSL</li>
+                <li>Monitorar tentativas de acesso</li>
+                <li>Firewall e VPN para conexões externas</li>
+            </ul>
+
+            <h3>B. Backups</h3>
+            <pre><code>mysqldump -u root -p banco > banco_backup.sql</code></pre>
+
+            <h3>C. Monitoramento</h3>
+            <ul>
+                <li>Ferramentas: PMM, Zabbix, Nagios</li>
+                <li>Métricas: QPS, uso de memória, IOPS</li>
+            </ul>
+
+            <h3>D. Desempenho</h3>
+            <ul>
+                <li>Indexação</li>
+                <li>Uso de <code>EXPLAIN</code></li>
+                <li>Particionamento de tabelas</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Escalabilidade</h2>
+            <ul>
+                <li>Vertical: hardware</li>
+                <li>Horizontal: replicação, sharding</li>
+                <li>Tipos: Master-Slave, Group Replication</li>
+            </ul>
+
+            <h2>6. Atualizações</h2>
+            <ul>
+                <li>Usar versões suportadas</li>
+                <li>Testes em ambiente de staging</li>
+                <li>Executar <code>mysql_upgrade</code> após upgrades</li>
+            </ul>
+
+            <h2>7. Documentação e Controle</h2>
+            <ul>
+                <li>Documentar estrutura e permissões</li>
+                <li>Controlar scripts em repositório</li>
+                <li>Auditar acessos</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p>Email: securityplus@gmail.com</p>
+                <p>Telefone: (61) 4002-8922</p>
+                <p>Endereço: SEP Sul Trecho 713/913, SHCS, Brasília - DF, 70390-135</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links relacionados</h3>
+                <ul>
+                    <li><a href="https://www.sans.org/cyber-security-training/operations-centers" target="_blank">SANS -
+                            SOC Training</a></li>
+                    <li><a href="https://www.cyber.gov.au/acsc/view-all-content/publications/introducing-security-operations-centre-soc"
+                            target="_blank">Cyber Gov AU</a></li>
+                    <li><a href="https://www.cloudflare.com/learning/ddos/glossary/security-operations-center-soc/"
+                            target="_blank">Cloudflare - SOC</a></li>
+                    <li><a href="https://www.splunk.com/en_us/solutions/security-operations-center.html"
+                            target="_blank">Splunk - SOC</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/seuusuario" target="_blank"><i data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/seuperfil" target="_blank"><i data-lucide="linkedin"></i></a>
+                <a href="https://instagram.com/seuinsta" target="_blank"><i data-lucide="instagram"></i></a>
+            </div>
+
+        </div>
+        <div class="footer-missao">
+            <p>Promovendo a cibersegurança com tecnologia, conhecimento e inovação.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Segurança Cibernética. Todos os direitos reservados.</p>
+        </div>
+
+
+    </footer>
+
+</html>
